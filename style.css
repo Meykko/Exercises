@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html{
+    height: 100%;   
+    width: 100%;
+}
+.card-container{
+   
+    width: 40%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.photo-container{
+    background-image: url("./music.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 230px;
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+.dollar{
+    color: grey;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+}
+.main-container{
+    text-align: center;
+}
+.plan-container{
+    display: grid;
+    gap: 70px;
+    justify-content: center;
+    padding: 10px ;
+    grid-template-columns: repeat(2, auto);
+    background-color: rgb(250, 250, 250);
+    align-items: center;
+    padding: 20px 0;
+    margin: 0 20px;
+    
+}
+.plan-left{
+    display: grid;
+    grid-template-columns:repeat(2, auto);
+    gap: 30px;
+    font-size: 15px;
+    
+}
+.button-container{
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.payment{
+    background-color: rgb(48, 48, 160);
+    color: white;
+    padding: 20px ;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+.payment:hover{
+    background-color: rgb(72, 72, 156);
+    cursor: pointer;
+}
+.cancel{
+    color: grey;
+    border: none;
+    background: transparent;
+    padding: 20px 0;
+    cursor: pointer;
+    font-size: 15px;
+}
+.cancel:hover{
+    color: rgb(19, 17, 17);
+}
+.order{
+    font-size: 30px;
+    margin-top: 30px 
+}
+.plan{
+    font-weight: bold;
+}
+.phrase{
+    
+    margin: 30px 20px;
+    font-size: 15px;
+}
+
+.change{
+    cursor: pointer;
+    font-size: 17px;
+}
+.change a:hover{
+    text-decoration: none;
+}
+@media screen and (max-width: 765px){
+    .card-container{
+        width: 60%;
+    }
+    .plan-container{
+        grid-template-columns: none;
+    }
+    
+}
+@media screen and (max-width: 882px){
+    .plan-container{
+        gap: 25px;
+    }
+}
+@media screen and (max-width: 500px){
+    .card-container{
+        width: 80%;
+    }
+}
